@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://zhanghan309.github.io/2022/06/01/hexo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -11,70 +11,61 @@
   </url>
   
   <url>
-    <loc>http://example.com/myself/index.html</loc>
+    <loc>https://zhanghan309.github.io/tags/index.html</loc>
     
-    <lastmod>2022-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/about/index.html</loc>
-    
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/timeline/index.html</loc>
+    <loc>https://zhanghan309.github.io/myself/index.html</loc>
     
-    <lastmod>2022-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/link/index.html</loc>
-    
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/messageboard/index.html</loc>
+    <loc>https://zhanghan309.github.io/link/index.html</loc>
     
-    <lastmod>2022-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/tags/index.html</loc>
-    
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categries/index.html</loc>
+    <loc>https://zhanghan309.github.io/categories/index.html</loc>
     
-    <lastmod>2022-06-01</lastmod>
+    <lastmod>2022-06-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/2022/06/01/hexo-github%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://zhanghan309.github.io/messageboard/index.html</loc>
+    
+    <lastmod>2022-06-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhanghan309.github.io/about/index.html</loc>
+    
+    <lastmod>2022-06-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhanghan309.github.io/timeline/index.html</loc>
     
     <lastmod>2022-06-01</lastmod>
     
@@ -84,7 +75,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://zhanghan309.github.io/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -92,12 +83,19 @@
 
   
   <url>
-    <loc>http://example.com/tags/hexo/</loc>
+    <loc>https://zhanghan309.github.io/tags/hexo/</loc>
     <lastmod>2022-06-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
+  
+  <url>
+    <loc>https://zhanghan309.github.io/categories/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2022-06-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
