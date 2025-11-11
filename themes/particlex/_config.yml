@@ -49,15 +49,17 @@ menu:
 card:
     enable: true
     description: |
-        Description
-        ...
+        先生曾说：世间成事者，超世之才不过其次，坚韧不拔之志者方为首要
+        ``` 齐静春
+        永远不要对这个世界失去希望
+        ```
     iconLinks:
     friendLinks:
-        Argvchs: https://argvchs.github.io
+        Isakura: https://ZHANGHAN309.github.io
 
 # Footer info
 footer:
-    since: 2022
+    since: 2023
     # Customize the server domain name ICP
     ICP:
         enable: false
@@ -91,7 +93,7 @@ crypto:
 
 # Search
 search:
-    enable: false
+    enable: true
 
 # giscus
 # https://github.com/giscus/giscus
