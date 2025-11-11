@@ -1,4 +1,9 @@
-[TOC]
+---
+title: CMake语法
+date: 2025/11/11
+tags: CMake
+categories: 技术篇
+---
 
 # 总览
 

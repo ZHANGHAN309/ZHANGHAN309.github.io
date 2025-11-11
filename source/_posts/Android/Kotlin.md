@@ -1,6 +1,8 @@
 ---
 title: Kotlin
-date: 2025/11/11
+date: 2025/11/1
+tags: Android
+categories: 技术篇
 ---
 
 # 总览
