@@ -136,8 +136,10 @@ switch(a)
     default:
         break;
 }
+```
 
 ## 函数、作用域、闭包
+```JavaScript
 
 // JavaScript 函数由`function`关键字定义
 function myFunction(thing){
@@ -155,6 +157,7 @@ setTimeout(function(){}, 5000);
 // 浏览器环境中，全局变量默认挂载到window对象上，Node.js挂载到global对象上
 // 函数作用域：函数内部声明的变量只在函数内部有效，var,let,const均受限制
 // 块级作用域：{}内部声明的变量只在块内有效，let,const受限制，var不受限制
+// 其他块级结构，包括块语句、try...catch、switch 以及其中一个 for 语句的头部，对于 var 并不创建作用域，而在这样的块内部使用 var 声明的变量仍然可以在块外部被引用。
 
 const globalVar = "我是全局变量";
 function fun1()
@@ -187,6 +190,8 @@ function sayHelloInFiveSeconds(name){
 }
 sayHelloInFiveSeconds("Adam"); // 会在5秒后弹出 "Hello, Adam!"
 ```
+
+变量提升是指变量声明在代码中位于变量使用后，运行时却优先于脚本执行之前处理，具体可见 {$ post_link 变量提升 "变量提升"$}
 
 ## 对象、构造函数和原型
 

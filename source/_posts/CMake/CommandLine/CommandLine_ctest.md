@@ -1,5 +1,5 @@
 ---
-title: CommandLine_ctest
+title: CTest命令行
 date: 2025/11/11
 tags: CMake
 categories: 技术篇

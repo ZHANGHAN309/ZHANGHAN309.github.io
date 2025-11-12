@@ -9,12 +9,12 @@ categories: 技术篇
 
 CMake其实一套工具集，包括cmake、ctest、cpack、cmake-gui和ccmake。
 
-[CMake命令行](./CommandLine/CommandLine_cmake.md)
+{% post_link CommandLine_cmake "CMake命令行"%}
 
-[CTest命令行](./CommandLine/CommandLine_ctest.md)
+{% post_link CommandLine_ctest "CTest命令行"%}
 
-[CPack命令行](./CommandLine_cpack.md)
+{% post_link CommandLine_cpack "CPack命令行"%}
 
-[CMake-GUI](./CommandLine/CommandLine_gui.md)
+{% post_link CommandLine_gui "GUI"%}
 
-[CCmake](./CommandLine/CommandLine_ccmake.md)
+{% post_link CommandLine_ccmake "CCmake"%}
