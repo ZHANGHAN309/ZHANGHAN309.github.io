@@ -1,7 +1,9 @@
 ---
 title: CMake语法
 date: 2025/11/11
-tags: CMake
+tags: 
+	- CMake
+	- 语法
 categories: 技术篇
 ---
 
