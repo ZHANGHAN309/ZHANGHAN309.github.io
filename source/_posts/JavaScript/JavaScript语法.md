@@ -191,7 +191,7 @@ function sayHelloInFiveSeconds(name){
 sayHelloInFiveSeconds("Adam"); // 会在5秒后弹出 "Hello, Adam!"
 ```
 
-变量提升是指变量声明在代码中位于变量使用后，运行时却优先于脚本执行之前处理，具体可见 {$ post_link 变量提升 "变量提升"$}
+变量提升是指变量声明在代码中位于变量使用后，运行时却优先于脚本执行之前处理，具体可见 {$ post_link 变量提升 "变量提升" $}
 
 ## 对象、构造函数和原型
 
