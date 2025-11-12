@@ -1,5 +1,5 @@
 ---
-tilte: JavaScript语法
+title: JavaScript语法
 date: 2025/11/12 8:43:00
 tags: 
     - JavaScript
