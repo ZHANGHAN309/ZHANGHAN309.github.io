@@ -76,6 +76,20 @@ myArray.push("World");
 // JS对象相当于其他语言的字典或映射
 var myObj = {myKey:"Say","Another:4};
 myObj["Another"]; // = 4
+
+// var和let区别
+// var支持先初始化变量再声明变量
+name = "Sam";
+var name;
+// let则不支持
+let name;
+name = "Sam";
+// var可以重复声明变量,let不行
+var name = "Sam";
+var name = "Tom";
+let name = "Sam";
+let name = "Tom"; // Error
+// 编程时更支持使用let
 ```
 
 ## 逻辑控制结构
