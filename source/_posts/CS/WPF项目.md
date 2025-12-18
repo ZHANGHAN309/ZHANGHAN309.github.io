@@ -49,6 +49,16 @@ XAML简单来说就是由WPF创建的XML语言，用来编辑页面，在\<Windo
 - `Title`
 窗口的标题
 
+在WPF项目里App.xaml相当于应用程序本身，虽然它本身有内容，但是却无法通过设计器展示出来，而项目创建时会默认创建一个窗口MainWindow.xaml，而App.xaml是通过头部的StartupUri指向展示的第一个窗口
+
+```Xaml
+<Application x:Class="com_mc_test.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:com_mc_test"
+             StartupUri="MainWindow.xaml">
+```
+
 ## XAML布局
 XAML提供了一个强大的布局系统，包含多种不同的布局控件，默认的布局控件是\<Grid>控件
 \<Grid>控件允许像表格一样定义行和列，并将控件放置在特定行与列组合的边界内
@@ -98,6 +108,8 @@ XAML提供了一个强大的布局系统，包含多种不同的布局控件，�
 
 
 # 参考
-https://learn.microsoft.com/en-us/dotnet/desktop/wpf/get-started/create-app-visual-studio
+[MicroSoft C#](https://learn.microsoft.com/zh-cn/dotnet/desktop/wpf/get-started/create-app-visual-studio)
 
-https://cloud.tencent.com/developer/article/1407580
+[如何清晰地描述一个项目架构-十毛](https://cloud.tencent.com/developer/article/1407580)
+
+[WPF中文网](https://www.wpfsoft.com/introduction)
