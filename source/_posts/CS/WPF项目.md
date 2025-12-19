@@ -27,7 +27,8 @@ WPF是C#的一个图形界面项目，本文主要介绍开发一个普通WPF项
 
 # 查看XAML
 在XAML代码编辑器里可以查看刚创建的项目代码
-```xaml
+
+```xml
 <Window x:Class="Names.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -51,7 +52,7 @@ XAML简单来说就是由WPF创建的XML语言，用来编辑页面，在\<Windo
 
 在WPF项目里App.xaml相当于应用程序本身，虽然它本身有内容，但是却无法通过设计器展示出来，而项目创建时会默认创建一个窗口MainWindow.xaml，而App.xaml是通过头部的StartupUri指向展示的第一个窗口
 
-```Xaml
+```Xml
 <Application x:Class="com_mc_test.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -62,7 +63,8 @@ XAML简单来说就是由WPF创建的XML语言，用来编辑页面，在\<Windo
 ## XAML布局
 XAML提供了一个强大的布局系统，包含多种不同的布局控件，默认的布局控件是\<Grid>控件
 \<Grid>控件允许像表格一样定义行和列，并将控件放置在特定行与列组合的边界内
-```XAML
+
+```XML
 <Grid Margin="10">
     
     <Grid.RowDefinitions>

@@ -1,0 +1,126 @@
+/* 文章页整体布局：两栏（正文+侧边栏） */
+.article {
+    display: flex;
+    gap: 2rem;
+    /* 正文和侧边栏间距 */
+    max-width: 1200px;
+    /* 全局最大宽度，适配不同屏幕 */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 左侧文章正文：占主要宽度 */
+.article-main {
+    flex: 1;
+    /* 占满剩余宽度（约 70%） */
+    min-width: 0;
+    /* 解决 flex 子元素文字溢出问题 */
+}
+
+/* 右侧侧边栏：固定宽度，滚动时固定 */
+.article-sidebar {
+    width: 300px;
+    /* 侧边栏宽度 */
+    flex-shrink: 0;
+    /* 不收缩 */
+    position: sticky;
+    top: 2rem;
+    /* 距离顶部 2rem，滚动时固定 */
+    align-self: flex-start;
+    /* 顶部对齐，不跟随正文高度 */
+}
+
+/* 侧边栏模块通用样式（相关文章+大纲） */
+.post-recent-article,
+.post-toc {
+    background-color: #f8f9fa;
+    /* 浅灰色背景 */
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    /* 两个模块之间的间距 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    /* 轻微阴影，更精致 */
+}
+
+/* 侧边栏标题样式（相关文章/大纲） */
+.sidebar-title,
+.post-toc h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 相关文章列表样式 */
+.tag-related-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tag-related-item {
+    margin: 0.8rem 0;
+}
+
+.tag-related-item a {
+    color: #34495e;
+    text-decoration: none;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* 最多显示 2 行文字，避免过长 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.tag-related-item a:hover {
+    color: #e74c3c;
+    /* hover 时红色，提升交互 */
+}
+
+.tag-related-empty {
+    color: #95a5a6;
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+/* 大纲样式 */
+.post-toc ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.post-toc li {
+    margin: 0.6rem 0;
+    line-height: 1.4;
+}
+
+.post-toc a {
+    color: #34495e;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.post-toc a:hover {
+    color: #e74c3c;
+}
+
+/* 响应式适配：手机端改为上下布局 */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        /* 手机端上下排列 */
+    }
+
+    .article-sidebar {
+        width: 100%;
+        /* 侧边栏占满宽度 */
+        position: static;
+        /* 取消固定定位 */
+        margin-top: 2rem;
+    }
+}
