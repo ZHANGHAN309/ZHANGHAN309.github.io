@@ -158,3 +158,8 @@ twikoo:
     region:
     path: location.pathname
     lang:
+
+marked:
+    anchors: true  # 开启标题锚点（关键）
+    anchorPrefix: ''
+    headerIds: true  # 生成标题 id（用于锚点跳转）

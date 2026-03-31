@@ -1,0 +1,12 @@
+# Hexo 生成的静态文件和缓存（无需同步）
+public/
+.deploy_git/
+db.json
+*.log
+
+# Node.js 依赖（第二台机器可通过 npm install 重新安装）
+node_modules/
+
+# 编辑器缓存（根据你的编辑器添加，如 VSCode）
+.vscode/
+.idea/  # 若用 JetBrains 系列编辑器

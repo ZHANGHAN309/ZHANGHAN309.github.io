@@ -1,10 +1,9 @@
 ---
 title: Net框架
 date: 2025/11/11
-tags: 
-    - C#
-    - .NetFramework
-categories: 技术篇
+tags:
+  - C#
+  - .NetFramework
 ---
 
 .NET 是一个安全、可靠且高性能的应用程序平台。
