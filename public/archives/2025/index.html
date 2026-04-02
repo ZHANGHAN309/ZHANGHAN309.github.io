@@ -1,12 +1,12 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | Hexo</title>
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>Archives | Isakuraの日常</title>
+    <meta name="author" content="Isakura-red" />
+    <meta name="description" content="本站用于记录学习笔记和日常生活" />
+    <meta name="keywords" content="单人" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -40,6 +40,8 @@
 
 
 
+<script src="/js/lib/search.js"></script>
+
 
 
 <link rel="stylesheet" href="/css/main.css" />
@@ -59,7 +61,7 @@
         <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
     <nav id="desktop-menu">
         <a class="title" href="/">
-            <span>HEXO</span>
+            <span>ISAKURAの日常</span>
         </a>
         
         <a href="/">
@@ -91,7 +93,7 @@
     <nav id="mobile-menu">
         <div class="title" @click="showMenuItems = !showMenuItems">
             <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+            <span>&emsp;ISAKURAの日常</span>
         </div>
         <transition name="slide">
             <div class="items" v-show="showMenuItems">
@@ -153,17 +155,953 @@
             
 <div id="archives">
     
+    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
+    
     <div id="timeline-wrap" ref="timeline">
         
-        <div class="timeline" data-title="helloworld">
+        <div class="timeline" data-title="kotlin">
             <div class="timeline-tail"></div>
             <div class="timeline-content">
-                <div class="item-time">2025/9/9</div>
-                <a href="/2025/09/09/hello-world/">
-                    <h3>Hello World</h3>
+                <div class="item-time">2025/11/1</div>
+                <a href="/2025/11/01/Android/Kotlin/">
+                    <h3>Kotlin</h3>
                 </a>
                 <div class="info">
                     
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/Android/" style="color: #00bcd4">
+                                Android
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="cmakegui">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CommandLine/CommandLine_gui/">
+                    <h3>CMake GUI</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #ff7d73">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="ctest命令行">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CommandLine/CommandLine_ctest/">
+                    <h3>CTest命令行</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #00bcd4">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="cpack命令行">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CommandLine/CommandLine_cpack/">
+                    <h3>CPack命令行</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #00a596">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="cmake命令行">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CommandLine/CommandLine_cmake/">
+                    <h3>CMake命令行</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #03a9f4">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="ccmake">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CommandLine/CommandLine_ccmake/">
+                    <h3>CCmake</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #ff7d73">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="游戏开发心得">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E5%BF%83%E5%BE%97/">
+                    <h3>游戏开发心得</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="cmake语法">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CMake%E8%AF%AD%E6%B3%95/">
+                    <h3>CMake语法</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #ff7d73">
+                                CMake
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E8%AF%AD%E6%B3%95/" style="color: #ffa2c4">
+                                语法
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="顶级语句">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CS/%E9%A1%B6%E7%BA%A7%E8%AF%AD%E5%8F%A5/">
+                    <h3>顶级语句</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            编程语言
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #00a596">
+                                C#
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="cmake文件">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CMake%E6%96%87%E4%BB%B6/">
+                    <h3>CMake文件</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #ff7d73">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="cmake工具命令行">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CMake/CMake%E5%B7%A5%E5%85%B7%E5%91%BD%E4%BB%A4%E8%A1%8C/">
+                    <h3>CMake工具命令行</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/CMake/" style="color: #00bcd4">
+                                CMake
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="重要功能">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CS/%E9%87%8D%E8%A6%81%E5%8A%9F%E8%83%BD/">
+                    <h3>重要功能</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            编程语言
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #ff7d73">
+                                C#
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="特性和反射">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CS/%E7%89%B9%E6%80%A7%E5%92%8C%E5%8F%8D%E5%B0%84/">
+                    <h3>特性和反射</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            编程语言
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #00bcd4">
+                                C#
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="net框架">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/11</div>
+                <a href="/2025/11/11/CS/Net%E6%A1%86%E6%9E%B6/">
+                    <h3>Net框架</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #00bcd4">
+                                C#
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/NetFramework/" style="color: #ffa2c4">
+                                .NetFramework
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="javascript语法">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/12</div>
+                <a href="/2025/11/12/JavaScript/JavaScript%E8%AF%AD%E6%B3%95/">
+                    <h3>JavaScript语法</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E8%AF%AD%E6%B3%95/" style="color: #00a596">
+                                语法
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/JavaScript/" style="color: #03a9f4">
+                                JavaScript
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="变量提升">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/12</div>
+                <a href="/2025/11/12/JavaScript/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/">
+                    <h3>变量提升</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/JavaScript/" style="color: #ff7d73">
+                                JavaScript
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="js事件">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/13</div>
+                <a href="/2025/11/13/JavaScript/JS%E4%BA%8B%E4%BB%B6/">
+                    <h3>JS事件</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AF%87/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            技术篇
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/JavaScript/" style="color: #00a596">
+                                JavaScript
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="wpf项目">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/11/28</div>
+                <a href="/2025/11/28/CS/WPF%E9%A1%B9%E7%9B%AE/">
+                    <h3>WPF项目</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A0/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            嵌入式学习
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #03a9f4">
+                                C#
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/WPF/" style="color: #00bcd4">
+                                WPF
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="面试">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/12/9</div>
+                <a href="/2025/12/09/CS/%E9%9D%A2%E8%AF%95/">
+                    <h3>面试</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E9%9D%A2%E8%AF%95/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            面试
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #ffa2c4">
+                                C#
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="考试认证计划">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/12/11</div>
+                <a href="/2025/12/11/%E8%80%83%E8%AF%95%E8%AE%A4%E8%AF%81%E8%AE%A1%E5%88%92/">
+                    <h3>考试认证计划</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            职业发展
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E8%80%83%E8%AF%95/" style="color: #03a9f4">
+                                考试
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="如何搭建博客-具体流程">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2025/12/18</div>
+                <a href="/2025/12/18/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2-%E5%85%B7%E4%BD%93%E6%B5%81%E7%A8%8B/">
+                    <h3>如何搭建博客-具体流程</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            博客网站
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="color: #00bcd4">
+                                博客
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/Hexo/" style="color: #ffa2c4">
+                                Hexo
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="西门子s7-1200">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2026/1/5</div>
+                <a href="/2026/01/05/PLC/%E8%A5%BF%E9%97%A8%E5%AD%90s7-1200/">
+                    <h3>西门子s7-1200</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E5%B7%A5%E6%8E%A7%E8%BD%AF%E4%BB%B6%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            工控软件学习之路
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/PLC/" style="color: #03a9f4">
+                                PLC
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E4%B8%8A%E4%BD%8D%E6%9C%BA/" style="color: #00a596">
+                                上位机
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="基础语法">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2026/1/12</div>
+                <a href="/2026/01/12/CS/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+                    <h3>基础语法</h3>
+                </a>
+                <div class="info">
+                    
+                    <span class="category">
+                        <a href="/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">
+                            <span class="icon">
+                                <i class="fa-solid fa-bookmark fa-fw"></i>
+                            </span>
+                            编程语言
+                        </a>
+                    </span>
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/C/" style="color: #00a596">
+                                C#
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="健身碳循环饮食">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2026/3/31</div>
+                <a href="/2026/03/31/Fit&Hit/%E5%81%A5%E8%BA%AB%E7%A2%B3%E5%BE%AA%E7%8E%AF%E9%A5%AE%E9%A3%9F/">
+                    <h3>健身碳循环饮食</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%81%A5%E8%BA%AB/" style="color: #ffa2c4">
+                                健身
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E9%A5%AE%E9%A3%9F/" style="color: #ff7d73">
+                                饮食
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="健身计划">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2026/4/1</div>
+                <a href="/2026/04/01/Fit&Hit/%E5%81%A5%E8%BA%AB%E8%AE%A1%E5%88%92/">
+                    <h3>健身计划</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/%E5%81%A5%E8%BA%AB/" style="color: #ffa2c4">
+                                健身
+                            </a>
+                        </span>
+                        
+                    </span>
                     
                 </div>
             </div>
@@ -176,11 +1114,11 @@
     <div id="footer-wrap">
         <div>
             &copy;
-            2022 - 2025 Hexo
+            2023 - 2026 Isakuraの日常
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
-            &commat;John Doe
+            &commat;Isakura-red
         </div>
         <div>
             Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
