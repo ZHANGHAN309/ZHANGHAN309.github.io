@@ -1,5 +1,5 @@
 # Hexo 生成的静态文件和缓存（无需同步）
-public/
+/public/
 .deploy_git/
 db.json
 *.log
@@ -9,4 +9,5 @@ node_modules/
 
 # 编辑器缓存（根据你的编辑器添加，如 VSCode）
 .vscode/
-.idea/  # 若用 JetBrains 系列编辑器
+.idea/  
+# 若用 JetBrains 系列编辑器
